@@ -1,0 +1,16 @@
+{
+  "name": "invoicepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass.scss css/style.css -w"
+  },
+  "author": "Uyi",
+  "license": "ISC"
+}
+
