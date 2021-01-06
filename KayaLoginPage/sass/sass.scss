@@ -1,0 +1,280 @@
+$color-grey-light: #AAAAAA;
+$color-grey-dark: #464646;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+    padding: 6rem 11rem;
+    height: 100vh;
+    font-family: "roboto", sans-serif;
+    background-image: url(../images/truck3coloured.jpg);
+    background-size: cover;
+    background-position: bottom;
+    box-sizing: border-box;
+}
+
+.main{
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3rem 5rem 0 black;
+    border-radius: .8rem;
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    font-family: 'Roboto';
+
+    &-fpsw{
+        margin-top: -3rem;
+    }
+}
+
+.border{
+    margin-left: 3%;
+    border: 3px solid #cccccc;
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+}
+.avatar{
+    height: 10%;
+    width: 7rem;
+    border-radius: 50%;
+    margin-left: .7rem;
+    margin-top: .7rem;
+}
+
+.row{
+    display: inline-block;
+    width: 100%;
+}
+
+.col-1{
+    width: 70%;
+    margin: auto;
+    margin-top: -6rem;
+    float: left;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 70vh;
+}
+
+.col-2{
+    position: relative;
+    width: 30%;
+    float: right;
+    height: inherit;
+
+}
+
+.card2{
+    margin-top: -2rem;
+}
+
+.main-text{
+    font-size: 3rem;
+    margin-top: -2rem;
+     background-image: linear-gradient(to right, rgb(25, 54, 88), rgb(81, 74, 119), black,  black);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.sub-text{
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.input-container {
+    background-color: none;
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    height: 4rem;
+}
+
+.icon{
+    padding: 1rem;
+  background-color: white;
+  color: black;
+  min-width: 4rem;
+  text-align: center;
+  font-size: 1.7rem;
+  height: 4rem;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+input{
+    width: 100%;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container2{
+    text-align: center;
+}
+
+.btn{
+        border: none;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s ;
+        margin-top: 1rem;
+        position: relative;
+      
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(black, .2);
+        
+    &::after{
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+    }
+
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .5s;
+    }
+
+    &:active{
+        transform: translateY(-1px);
+        outline: none;
+        box-shadow: 0 .5rem 1rem rgba(black, .2);
+    }
+
+    &--login{
+        background-color: white;
+        color: black;
+
+        &::after{
+            background-color: white;
+        }
+    }
+}
+
+.fpsw{
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+
+    & a{
+        text-decoration: none;
+        color: #2b2828;
+
+        &:hover{
+            color: rgb(105, 83, 228);
+        }
+        }
+}
+
+.fpsw-contents{
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: -4rem;
+}
+
+.fullCircle{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: white;
+  margin: auto;
+  }
+
+.fpsw-icon1{
+    margin-top: 1.8rem;
+    background-image: url(../images/truck3coloured.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position: bottom;
+    // color: rgb(107, 107, 107);
+    font-size: 6rem;
+}
+
+.main-text-fpsw{
+    background-image: linear-gradient(to right, rgb(25, 54, 88), rgb(81, 74, 119), black);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    margin-top: .4rem;
+}
+
+.sub-text-fpsw{
+    font-size: 2rem;
+    margin-top: .5rem;
+}
+
+.input-container-fpsw{
+    background-color: none;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1rem;
+    }
+
+.btn-fpsw{
+margin: auto;
+outline: none;
+}
+
+
+
+/**MEDIA QUERY**/
+@media screen and (max-width:800px){
+    body{
+        padding: 10%;
+    
+    .col-1{
+        display: none;
+    }
+
+    .col-2{
+        margin-top: 4rem;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        width: 80%;
+    }
+
+    .logo :not(.logo-fpsw){
+        margin: auto;
+    }
+    }
+
+    .fpsw-contents{
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .border{
+        border: none;
+    }
+    }
