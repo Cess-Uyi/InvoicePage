@@ -14,40 +14,40 @@
 </head>
 
 <body>
-    <section>
+    <section class="whole" id="whole">
         <div class="main">
-            <div class="border logo">
+            <div class="main__border">
                 <div>
-                    <img src="images/Kaya logo.JPG" class="avatar" alt="avatar">
+                    <img src="images/Kaya_logo.JPG" class="main__logo" alt="Kaya Logo">
             </div>
         </div>
             
         <div class="row">
-            <div class="column col-1">
-                <div class="card card1">
-                    <img src="/images/undraw_Analytics_re_dkf8.svg" alt="Analytics Image">
-                </div>
+            <div class="col col--1">
+                    <img src="images/undraw_Analytics_re_dkf8.svg" class="illustration" alt="Illustration">
             </div>
 
-            <div class="col-2">
+            <div class="col col--2">
             <!-- <div style=" position: relative; width: 30%; float: right; height: inherit;"> -->
                 <p><h1 class="main-text">Welcome Back <i class="far fa-smile-beam"></i></h1></p>
                 <p class="sub-text">To remain connected, please login with your personal information by email address and password</p>
 
-                <form action="#" method="post">
+                <form action="#" method="post" class="form">
                         
-                    <div class="input-container">
-                        <i class="far fa-envelope icon"></i>
-                        <input type="email" placeholder="Email" name="email" required>
+                    <div class="form__group">
+                        <!-- <i class="far fa-envelope icon"></i> -->
+                        <input type="email" class="form__input" placeholder="Email" id="email" required>
+                        <label for="email" class="form__label" >Email</label>
                     </div>
     
-                    <div class="input-container">
-                        <i class="fas fa-lock icon"></i>
-                        <input type="password" placeholder="Password" name="password" required>
+                    <div class="form__group">
+                        <!-- <i class="fas fa-lock icon"></i> -->
+                        <input type="password" class="form__input" placeholder="Password" id="password" required>
+                        <label for="password" class="form__label">Password</label>
                     </div>
                     <div class="container2">
                             <button type="submit" class="btn btn--login">Login</button>
-                            <span class="fpsw"><a href="forgotPassword.html">Forgot Password?</a></span>
+                            <span class="btn--fpsw"><a href="#popup">Forgot Password?</a></span>
                     </div>
     
                 </form>
@@ -56,5 +56,37 @@
         </div>
         </div>
     </section>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+        <div class="main__border fpsw__logo">
+            <div>
+                <img src="images/Kaya_logo.JPG" class="main__logo" alt="Kaya Logo">
+            </div>
+        </div>
+
+        <div class="fpsw__contents">
+            <a href="#whole" class="popup__close">&times;</a>
+            <div class="fpsw__avatar">
+                <img src="images\undraw_forgot_password_gi2d.svg" class="fpsw__img" alt="Forgot Password Image">
+            </div>
+            <p>
+                <h1 class="fpsw__text--main">Hey! Forgot Your Password?</h1>
+                <p class="fpsw__text--sub">No worries! Enter your email and we will send you a reset</p>
+            </p>
+
+            <div class="form__group fpsw__form__group">
+                <!-- <i class="far fa-envelope fpsw-icon2 icon"></i> -->
+                <input type="email" class="form__input" placeholder="Email" id="email2" required>
+                <label for="email" class="form__label fpsw__form__label">Email</label>
+
+            </div>
+                    <button class="btn fpsw__btn">Send Request</button>
+
+        </div>
+    </div>
+    </div>
+
+  
 </body>
 </html>
