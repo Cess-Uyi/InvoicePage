@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/ceaf37b45e.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="whole" id="whole">
+        <div class="main">
+            <div class="main__border">
+                <div>
+                    <img src="images/Kaya_logo.JPG" class="main__logo" alt="Kaya Logo">
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="col col--1">
+                    <img src="images/undraw_Analytics_re_dkf8.svg" class="illustration" alt="Illustration">
+            </div>
+
+            <div class="col col--2">
+            <!-- <div style=" position: relative; width: 30%; float: right; height: inherit;"> -->
+                <p><h1 class="main-text">Welcome Back <i class="far fa-smile-beam"></i></h1></p>
+                <p class="sub-text">To remain connected, please login with your personal information by email address and password</p>
+
+                <form action="#" method="post" class="form">
+                        
+                    <div class="form__group">
+                        <!-- <i class="far fa-envelope icon"></i> -->
+                        <input type="email" class="form__input" placeholder="Email" id="email" required>
+                        <label for="email" class="form__label" >Email</label>
+                    </div>
+    
+                    <div class="form__group">
+                        <!-- <i class="fas fa-lock icon"></i> -->
+                        <input type="password" class="form__input" placeholder="Password" id="password" required>
+                        <label for="password" class="form__label">Password</label>
+                    </div>
+                    <div class="container2">
+                            <button type="submit" class="btn btn--login">Login</button>
+                            <span class="btn--fpsw"><a href="#popup">Forgot Password?</a></span>
+                    </div>
+    
+                </form>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+        <div class="main__border fpsw__logo">
+            <div>
+                <img src="images/Kaya_logo.JPG" class="main__logo" alt="Kaya Logo">
+            </div>
+        </div>
+
+        <div class="fpsw__contents">
+            <a href="#whole" class="popup__close">&times;</a>
+            <div class="fpsw__avatar">
+                <img src="images\undraw_forgot_password_gi2d.svg" class="fpsw__img" alt="Forgot Password Image">
+            </div>
+            <p>
+                <h1 class="fpsw__text--main">Hey! Forgot Your Password?</h1>
+                <p class="fpsw__text--sub">No worries! Enter your email and we will send you a reset</p>
+            </p>
+
+            <div class="form__group fpsw__form__group">
+                <!-- <i class="far fa-envelope fpsw-icon2 icon"></i> -->
+                <input type="email" class="form__input" placeholder="Email" id="email2" required>
+                <label for="email" class="form__label fpsw__form__label">Email</label>
+
+            </div>
+                    <button class="btn fpsw__btn">Send Request</button>
+
+        </div>
+    </div>
+    </div>
+
+  
+</body>
+</html>
